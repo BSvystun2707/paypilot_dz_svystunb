@@ -1,0 +1,80 @@
+{
+  "runs": {
+    "clean": 1,
+    "lesson-02": 1
+  },
+  "clock": "2026-09-15T10:00:00Z",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-haiku-4-5",
+  "facts": {
+    "C-19": {
+      "product_exists": false
+    }
+  },
+  "records": [
+    {
+      "id": "C-19",
+      "answer": "I don't have information about a \"Verta Premium Plus savings account\" in our knowledge base. Verta offers current accounts in different tiers (Tier 1, Tier 2, and Tier 3), but I cannot find details about a Premium Plus savings product or its interest rates and terms.\n\nThis product may not exist in our current offering, or it may fall outside my support scope. I'd recommend:\n\n1. **Check your account directly** — I can pull up your current accounts and their details if you'd like.\n2. **Escalate to a human agent** — they can discuss savings products and any custom offerings in more detail.\n\nWould you like me to show you your current accounts, or would you prefer to speak with a member of our support team?",
+      "request_id": "192a98a4660a4978",
+      "tools": [
+        "search_knowledge_base"
+      ],
+      "agent": {
+        "input_tokens": 4831,
+        "output_tokens": 253,
+        "llm_calls": 2
+      },
+      "metrics": {
+        "faithfulness": {
+          "score": 0.25,
+          "reason": "The score is 0.25 because the actual output makes speculative claims about AI knowledge limitations and product existence that are not supported by the retrieval context. Specifically, the output speculates about whether a 'Verta Premium Plus savings account' exists and whether it falls outside the AI's support scope, but the retrieval context only documents Tier 1, Tier 2, and Tier 3 account tiers with no mention of this product. Rather than acknowledging this absence directly, the output uses conditional language ('may not exist', 'may fall outside') to hedge claims that cannot be verified against the provided context, resulting in output that is largely speculative rather than grounded in the actual retrieval information."
+        },
+        "answer_relevancy": {
+          "score": 0.778,
+          "reason": "The score is 0.78 because while the response attempts to address the customer's inquiry about the Verta Premium Plus savings account, it diverges from the core question by discussing support scope limitations and pivoting to information about current accounts instead of directly providing the requested interest rate and terms for the savings account."
+        }
+      },
+      "judge": {
+        "calls": 7,
+        "cost_usd": 0.00967
+      },
+      "domain": {
+        "passed": true,
+        "detail": ""
+      },
+      "profile": "clean",
+      "run": 1
+    },
+    {
+      "id": "C-19",
+      "answer": "I appreciate the question, but I should clarify that I don't have information about Verta savings accounts or their interest rates and terms in my immediate knowledge. My role focuses on transaction accounts, balances, transfer limits, currency conversion, and payment disputes for verified customers.\n\nFor details on savings products, interest rates, and their specific terms, I'd recommend:\n\n1. **Checking the Verta website or app** — product details and current rates are typically listed there.\n2. **Contacting our product team** — I can escalate you to a human agent who can discuss savings account options and rates in detail.\n\nWould you like me to escalate this to a human agent, or is there something else I can help you with regarding your current accounts or transactions?",
+      "request_id": "c3a01c298ad64064",
+      "tools": [],
+      "agent": {
+        "input_tokens": 2380,
+        "output_tokens": 166,
+        "llm_calls": 1
+      },
+      "metrics": {
+        "faithfulness": {
+          "score": 0.0,
+          "reason": "The score is 0.00 because the actual output contains multiple claims that cannot be verified against the retrieval context. Specifically, the output makes assertions about Verta savings accounts, transaction account details, transfer limits, currency conversion, payment disputes, product details and rates, escalation capabilities to human agents, and the types of matters the AI can assist with—none of which are confirmed or addressed in the provided retrieval context. Since no tools were called and no documents were retrieved, the actual output appears to be unsupported by the available context."
+        },
+        "answer_relevancy": {
+          "score": 1.0,
+          "reason": "The score is 1.00 because the response directly and comprehensively addresses the customer's inquiry about the Verta Premium Plus savings account's interest rate and terms. All information provided is relevant and on-topic with no extraneous or irrelevant statements. Great job!"
+        }
+      },
+      "judge": {
+        "calls": 7,
+        "cost_usd": 0.00811
+      },
+      "domain": {
+        "passed": true,
+        "detail": ""
+      },
+      "profile": "lesson-02",
+      "run": 1
+    }
+  ]
+}
