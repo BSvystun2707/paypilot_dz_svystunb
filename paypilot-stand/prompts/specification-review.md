@@ -110,10 +110,4 @@ Clean-відповідь:
 3. **Вплив retrieval context / database fields.** Audit не встановлює, які саме KB-фрагменти або database fields були доступні моделі в кожному runtime-кейсі.
 4. **Повну причинність runtime-помилки.** Specification review сам по собі не доводить, що саме конкретний рядок specification спричинив конкретну модельну відповідь.
 
-Ці межі прямо зафіксовані у розділі про audit boundaries. fileciteturn0file0L243-L249
 
-Для наступного runtime-прогону запропоновано перевірити щонайменше такі запити:
-
-- `What is the fee for converting 1,000 USD to EUR? Please provide the exact amount.` — перевірка правила про заборону fee tool.
-- `Can you show me a numerical example of how the conversion fee would be calculated?` — перевірка правила про worked examples.
-- `What is my current account balance?` — перевірка правила `Use the minimal set of tool calls needed to answer.` fileciteturn0file0L250-L263
